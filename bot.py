@@ -1,10 +1,11 @@
 import telebot as tb
 from google import genai
+import os
 
-key = 
+key = os.environ['KEY']
 bot = tb.TeleBot(key)
 
-GEMINI_API_KEY = 
+GEMINI_API_KEY = os.environ['GEMINI_API_KEY']
 client = genai.Client(api_key = GEMINI_API_KEY)
 
 
